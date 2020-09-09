@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#general{
+    width: 1200px;
+    margin: 0px auto;/*Con esto centramos un elemento en la pagia*/
+    margin-top:20px;
+    border: 1px solid blanchedalmond;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background: rgb(22, 22, 230);
+    color: white;
+    text-align: center;
+    line-height: 90px;/*Para alineacion vertical*/
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#menu{
+    background-color: rgb(219, 240, 238);
+}
+
+#menu ul li{
+    display: block;
+    float: left;
+    padding: 10px;
+    border-right:1px solid #ccc;
+  
+}
+#menu ul li a{
+    display: block;
+    padding: 15px;
+    color: rgb(2, 0, 0);
+}
+#menu ul li:hover{
+    background: rgb(1, 1, 49);
+    cursor: pointer;
+
+}
+#menu ul li:hover a{
+    color: white;
+}
+
+#lateral{
+    float: left;
+    width: 30%;
+    border: 1px solid black;
+    min-height: 500px;/*Altura minima*/
+    max-height: 650px;/*Altura maxima*/
+    text-align: center;
+    overflow-y:scroll; /*Con esta propiedad colocamos en un scroll en el lado vertical y todo el contenido entraria en la caja*/
+}
+#contenido{
+    width: 69%;
+    border: 1px solid black;
+    float: left;
+}
+#contenido > h1{
+    text-align:center;
+    border-bottom: 1px soli #ccc;
+    padding: 15px;
+    text-shadow: 0px 0px 5px black; /*Para sombreado primero el valor del eje X luego el Y despues el difuminado y por ultimo el color de la sombra*/
+}
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: rgb(104, 102, 214);
+    border: 1px solid rgb(80, 1, 18);
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 200px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 15px gray;/*Para sombra de las cajas*/
+    border-radius: 50px;/*Para bordes redondeados en las cajas*/
+    
+}
+
+.sombra{
+    box-shadow: 0px 0px 20px black inset !important;/*Con esto le damos sombra interior a una caja*/
+
+}
+footer{
+    width: 100%;
+    height: 55px;
+    line-height:55px;
+    background: #eee;
+    text-align: center;
+    border-top: 1px solid #ccc;
+
+}
+.libre{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    border:1px solid black;
+    background-color: green;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size:13px;
+}
+.libre1{
+    z-index: 2; /*Con esto logramos ubicar que caja va primero cuando tiene posisicon absoluta*/
+}
+.libre2{
+    background-color: teal;
+    top: 250px;
+    left: 50%;
+    z-index: 1;
+}
+.fija{
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    border:1px solid black;
+    background-color: green;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size:13px;
+}

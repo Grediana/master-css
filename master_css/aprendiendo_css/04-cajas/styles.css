@@ -1,0 +1,38 @@
+*{
+    margin: 0px;/*Las paginas html por defecto traen su propios margenes para eliminarlos colocamos estas 2 propiedades asi*/
+    padding: 0px;
+}
+.caja{
+    display: block; /* existe diferentes tipos de display, para poderlo flotar debemos colocarle la propiedad block para que actue como un bloque*/
+    width: 250px;/*Ancho*/
+    height: 250px;/*Alto*/
+    background-color: chartreuse;
+    border: 10px groove green;
+    margin: 15px;/*Con esta propiedad podemos darle un margen general*/
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 24px;
+    margin-right: 100 px;
+    padding: 30px;
+    float: left; /*Con esta propiedad podemos mover las cajas*/
+   
+    
+}
+#cajas{
+   /* max-width: 700px; ;Con esto le damos una anchura maxima a nuestras cajas*/
+    border: 1px solid black;
+}
+
+.caja p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 230px;
+}
+
+.clearfix{
+    float: none;
+    clear: both; /*Con esto le indicamos que limpie por todos los lados los flotados y los elementos se coloquen abajo*/
+    
+}

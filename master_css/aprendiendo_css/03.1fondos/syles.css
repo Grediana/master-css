@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(155, 155, 192);
+    
+    color: black;
+    text-align: justify;
+    text-indent: 15px;/*Se utiliza para darle un identacion a cada parrafo*/
+    /*word-spacing: 10px;/*Se utiliza para darle separacion entre palabras
+    letter-spacing: 5px; Se utiliza para dar separacion entre letra y letra*/
+   
+}
+
+#caja{
+    border: 5px solid black;/*con border hacemos el borde con solid el tipo de borde y el ultimo es el color*/
+    padding: 15px;
+    background-color: rgb(70, 80, 153);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; /*Con esta propiedad aliniamos los textos y tambien imagenes*/
+    line-height: 50px;/*Esta propiedad nos permite establecer la sepacion entre dos lineas*/
+    text-transform: uppercase;
+}
+h2{
+    color: blue;
+    background: white;
+    background-image: url(img/patron2.png);
+    border: 5px solid black;
+}
+
