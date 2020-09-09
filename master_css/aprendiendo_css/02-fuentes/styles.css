@@ -1,0 +1,35 @@
+
+@font-face{
+     font-family: MontserratFuenteCustom;
+     src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+h1{
+
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     font-style: italic;
+     font-family: 'Russo One', sans-serif;
+     text-transform: uppercase; /*Esta prropiedad nos permite cambiar el texto en este caso a mayuscula*/
+     font-size:45px ;
+     /*Colores*/
+     /*colores del sistema, ccs trae por defecto una gama de colores que podemos identificar en su pagina*/
+     color: mediumpurple;
+     /*Colores hexadecimales, son el codigo que viene con caracteres numeros y letras*/
+     color: #667755;
+     /*tenemos los colores RGB que son una combinacion entre el rojo verde y azul*/
+     color: rgb(50, 168, 82);
+     /*los colores RGBA que se le añade una transparencia*/
+     color: rgba(50, 168, 82, 1)
+
+}
+
+h3{
+     font-family:  MontserratFuenteCustom, "comic Sans MS";
+     font-size: 35px; /* Para cambiar el tamaño de la letra*/
+     font-weight: lighter;
+
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: bold; /*Para cambiar el grosor de la letra*/
+}

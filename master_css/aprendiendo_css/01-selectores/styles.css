@@ -1,0 +1,89 @@
+
+/* ------------------Selector de etiquetas, nos permite establecer efecto a todo los elementos que contengan esa etiqueta */
+h1{
+    color: blue;
+    font-size: 50px;  /*esta etiqueta permite ajustar el tamaño de las letras*/
+   /* text-decoration: underline; se utiliza para subrayar el titulo*/
+    padding: 10px; /*con esta le indicamos el espacio entre el elemento y el borde de la caja*/
+}
+
+a{
+    font-size: 18px; /* con esta etiqueta especificamos la dimension de la letra*/
+    color:blue;
+    text-decoration: none;
+}
+/* SELECTORES COMPUESTO*/
+
+footer a{ 
+    color:red;
+}
+/*SELECTORES ID*/
+#descripcion{
+    border: 5px solid black;
+    padding: 15px;
+}
+#titulo{
+    background-color: chocolate;
+    border:2px dashed white; /*con esta etiqueta colocamos borde con dashed le indicamos que sea punteado*/
+}
+/*Selectores de Clase*/
+
+.parrafo{
+    font-style: italic; /*Con esta etiqueta le indicamos el estilo de la letra */
+    text-decoration: underline;
+    font-weight: bolder; /* esta etiqueta nos permite darle un grosor a la fuente*/
+}
+/*En las clase podemos tener varias clases en una de manera que si varios elementos comparten esa clase y solo queremos aplcarle css a 
+a una etiqueta lo hacemos de la sigueinte forma*/
+
+.parrafo1, .parrafo2{
+    background-color: aqua;
+    padding: 10px;
+}
+
+.parrafo2{
+    background-color: orangered;
+    color: orchid;
+}
+
+/* Selectores de atributo*/
+#usuario form{
+    border:5px solid blue;
+    margin-top: 15px; /* Con esta etiqueta le damos margen por arriba*/
+    margin-bottom: 15px; /* Con esta etiqueta le damos margen por debajo*/
+    padding: 20px;
+
+}
+
+#usuario form *{
+    display: block; /*Esta etiqueta le indica como conportarse si como texto o como un bloque*/
+}
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px; /* esta etiqueta es espaciado interno*/
+    width: 300px;
+}
+input[type="submit"]{
+    background: chartreuse;
+    color: cornsilk;
+    padding: 10px;
+    font-size: 17px;/*Esta etiqueta es para cambiar el tamaño de la letra*/
+    text-transform: uppercase; /*Con esta estiqueta cambiamos el texto a minuscula mayuscula o visceversa*/
+    cursor: pointer;
+}
+/*Selectore Hijos*/
+
+#menu > li > a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+
+}
+/*Prioidad*/
+#saludo h1{
+    background: brown !important;
+}
+
+h1{
+    background: purple !important;
+}

@@ -1,0 +1,57 @@
+#boton{
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border: 5px solid black;
+    transition: all 3s;/*Con esta popiedad logramos un efecto de transicion
+    podemos variar el tiempo que demore la transicion po ejemplo medio segudo seria 500ms
+    tambien podemos variar el efecto del tiempo para cada propiedad, en vez de all, escribimos
+    border 2s, background 3s y asi sucesivamente*/
+}
+#boton:hover{
+    border-radius: 15px;
+    background:orange;
+    border:5px solid red;
+
+}
+#caja{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background:lightcoral;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    animation-name: desplazamiento;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;/*Esto es para que la animacion sea infinita*/
+    animation-timing-function: linear;/*Con esta propiedad le indicamos como va a ser la animacon es decir si rapida y depues lenta...*/
+    
+}
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);/*con esta propiedad le indicamos que gire*/
+    }
+    50%{
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 999px;/*Con esto hacemos que un punto de la nimacion se convierta en un circulo*/
+    }
+    75%{
+        background: blue;
+    }
+    77%{
+        border:10px dashed black;
+    }
+    100%{
+        margin-left: 0px;
+    }
+
+}
