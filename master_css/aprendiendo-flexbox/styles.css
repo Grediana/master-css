@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#layout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*Con esta propiedad le indicamos que los elemento sdentro del contenedor no salga
+    fuera del contenedor. escribiendo (flex-flow: row-wrap;) le indicamos lo mismo
+    que escribimos en las dos lineas de codigo anterior.*/
+    justify-content: space-between;/*Con esta propiedad le indicamos a las cajas la posicion con start se ubica a la izqierda
+    con end a la derecha*/
+    height: 600px;/*De esta manera lo podemos alinear verticalmente*/
+    align-items: flex-start;/* LE indicamos la posicion es decir hacia arriba, en el medio*/
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.caja{
+    /*flex-basis: calc((100% / 3) - 68px); Con la prpiedad flex-basis: le indicamos un ancho minimo a nuestras cajas
+    y con la propiedad calc podemos hacer calculos en CSS;*/
+    /*flex-grow: 1;Con esta propiedad y el numero 1 le indicamos que cada una de las cajas ocupara el mismo tamaño*
+    esta propiedd indica que tamaño queremos que ocupe, le podemos dar tamaño diferente a cada una de las cajas*/
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    margin: 10px;
+    background: gray;
+}
+.red{
+    align-self: flex-start;
+   /* flex-grow: 0;
+    flex-shrink: 0; Con esta propiedad le reducimos el tamaño a las cajas*/
+    order: 4;
+    background: red;
+   /* flex-basis: 100%;*/
+}
+.green{
+    align-self: center;
+    order: 2;
+    background: green;
+
+}
+.blue{
+    order: 1;
+    background: blue;
+}
+
+.orange{
+    order: 3;
+    background: orange;
+}

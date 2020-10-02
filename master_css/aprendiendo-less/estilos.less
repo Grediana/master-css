@@ -1,0 +1,58 @@
+// VARIABLES
+@bgcolor: lightblue;
+@fuente: Arial;
+@b: body;
+
+@{b}{
+    background: @bgcolor;
+}
+
+h1{
+    font-family: @fuente;
+}
+
+//ANIDACION
+.informacion{
+    ul{
+        a{
+            color: green;
+            font-size: 10px;
+
+        }
+    }
+}
+//mixins-- Funciones tambien le podemos pasar datos por parametros
+.sombras(){
+    box-shadow: 0px 0px 5px greenyellow;
+    text-shadow: 0px 0px 3px greenyellow;
+}
+
+.informacion{
+    .sombras();
+}
+
+//OPERADORES
+h1{
+    font-size: 30px + 7px;
+}
+
+// Mixins condicionales
+.textoNegro (@value) when (@value=negro){
+    color: black;
+}
+
+h1{
+    color: blue;
+    .textoNegro(blanco)
+}
+
+//Bucles
+.loop(@cont) when (@cont > 0){
+    .loop((@cont - 1));
+    height: (900px / @cont);
+}
+
+.informacion{
+    height: 900px;
+    .loop(5);
+}

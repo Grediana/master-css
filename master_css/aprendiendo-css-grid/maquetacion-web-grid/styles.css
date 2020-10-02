@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+
+#website-areas *{
+    margin: 0px;
+    padding: 0px;
+}
+#website-areas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    /*Se escribe el nombre del grid areas antas veces como columnas tengamos*/
+    grid-template-areas: 
+        "cabecera cabecera cabecera cabecera cabecera";
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+/*Centrando el contenido de la caja se tiene que utilizar flex*/
+#website-areas #cabecera{ 
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+    background: blue;
+    color: white;
+}
+#website-areas #menu{
+    background: lightblue;
+    color: black;
+    line-height: 70px;
+}
+#website-areas #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+#website-areas #contenido{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+    background: #eee;
+    
+}
+#website-areas #contenido article{
+    background: #ccc;
+    border: 1 px solid #555;
+}
+#website-areas #lateral{
+   
+    background: orange;
+    color: white;
+}
+#website-areas #pie-pagina{
+    
+    background: black;
+    color: white;
+}
